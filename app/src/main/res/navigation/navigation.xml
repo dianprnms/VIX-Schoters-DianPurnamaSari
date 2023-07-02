@@ -9,5 +9,14 @@
         android:id="@+id/source"
         android:name="com.example.vix_schoters_dianpurnamasari.view.Source"
         android:label="fragment_source"
-        tools:layout="@layout/fragment_source" />
+        tools:layout="@layout/fragment_source" >
+        <action
+            android:id="@+id/action_source_to_detail"
+            app:destination="@id/detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.vix_schoters_dianpurnamasari.view.Detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
