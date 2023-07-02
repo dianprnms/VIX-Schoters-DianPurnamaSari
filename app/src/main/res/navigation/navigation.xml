@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_source_to_detail"
             app:destination="@id/detail" />
+        <action
+            android:id="@+id/action_source_to_profile"
+            app:destination="@id/profile" />
     </fragment>
     <fragment
         android:id="@+id/detail"
         android:name="com.example.vix_schoters_dianpurnamasari.view.Detail"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.vix_schoters_dianpurnamasari.view.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -33,6 +34,10 @@ class Source : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         getDestinasiFavorite()
+
+        binding.btnToProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_source_to_profile)
+        }
     }
 
     fun getDestinasiFavorite(){
